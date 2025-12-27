@@ -1,0 +1,107 @@
+---
+---
+
+@import "minima";
+
+// Colors
+$background: #1a1a1a;
+$surface: #242424;
+$text: #e0e0e0;
+$text-muted: #a0a0a0;
+$accent: #8ecf9a;
+$accent-hover: #a8e0b3;
+
+// Base overrides
+body {
+  background-color: $background;
+  color: $text;
+}
+
+a {
+  color: $accent;
+  
+  &:hover {
+    color: $accent-hover;
+  }
+}
+
+// Monospace accents
+.post-card-meta, code, pre {
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+  font-size: 0.85em;
+}
+
+// Post cards
+.post-card {
+  border-left: 2px solid $accent;
+  padding-left: 1.25rem;
+  margin-bottom: 2.5rem;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-left-color: $accent-hover;
+  }
+}
+
+.post-card-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.35rem;
+  
+  a {
+    color: $text;
+    text-decoration: none;
+    
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.post-card-meta {
+  color: $text-muted;
+  margin-bottom: 0.5rem;
+}
+
+.post-card-excerpt {
+  margin-bottom: 0.5rem;
+}
+
+.post-card-link {
+  font-size: 0.9em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2.5rem 0;
+}
+
+h1, h2, h3, h4 {
+  color: $text;
+}
+
+// Header/nav overrides for dark theme
+.site-header {
+  background-color: $surface;
+  border-top: none;
+  border-bottom: 1px solid #333;
+}
+
+.site-title, .site-title:visited {
+  color: $text;
+}
+
+.site-nav .page-link {
+  color: $text-muted;
+  
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $surface;
+  border-top: 1px solid #333;
+  color: $text-muted;
+}
