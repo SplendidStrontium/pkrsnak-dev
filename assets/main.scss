@@ -48,11 +48,11 @@ a {
   font-size: 1.35rem;
   
   a {
-    color: $text;
+    color: $accent;
     text-decoration: none;
     
     &:hover {
-      color: $accent;
+      color: $accent-hover;
     }
   }
 }
